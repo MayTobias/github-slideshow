@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://127.0.0.1:5500/Actividades/Actividad%203.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>actividad3_1</title>
+</head>
+<body>
+    <h1><u> Criterios de selección </u></h1>
+    <p> <font face="Times new roman"> 
+        Existen cinco tipos de selectores o criterios de selección para elegir los elementos que una regla de estilo debe formatear. Mediante su uso, se seleccionan los elementos que se verán afectados por las especificaciones que posteriormente se definan sobre su formato. De su buen uso depende la efectividad de la hoja de estilo, ya que una mala elección de selectores provocaría la aparición de resultados inesperados.
+   </font></p>
+   
+   <h2>Por tipo o nombre de elemento</h2>
+   <p> <font face="Times new roman">
+       Este criterio de selección es el más sencillo por su sintaxis. Aplica un determinado formato a todos los elementos mencionados sin distinción de clases, identificadores, contextos, etcétera. Esta sencillez tiene como contrapartida, dependiendo de los casos, la universalidad de su aplicación, es decir, el formato se aplicará a todos los elementos. Dado que en la mayoría de los casos no se desea que todos los elementos de un tipo tengan el mismo formato, suelen aplicarse más los otros criterios que, sin poseer la misma sencillez de sintaxis, afinan más la selección.
+
+       </font></p>
+       
+       <h2>Por el contexto en el que se encuentra el elemento</h2>
+   <p> <font face="Times new roman">
+       Con este criterio, e pueden seleccionar elementos en función de sus ascendientes, padres o hermanos. Estos elementos se pueden definir como:
+       
+       <span> Acendiente </span> Es el elemento que contiene al que se desea formatear. Esta contención es directa, es decir, que puede haber más de un contenedor por medio.
+       
+       <span>Padre</span>  Es el elemento que contiene directamente al que se desea formatear (hijo).
+       
+       <span>Hermano</span>  Es el elemento que precede directamente (hermano adyacente) al deseado dentro del mismo elemento padre.
+       </font></p>
+   
+   <h2> Por clase o identificador del elemento</h2>
+   <p><font face="Times new roman">
+       Esta forma de selección es la más utilizada de las vistas hasta ahora. Si se etiquetan elementos con una clase o id (término usado generalmente para referirse a los identificadores), se puede utilizar este criterio en un selector para aplicar formato solamente a dichos elementos. Esto ofrece una gran precisión a la hora de seleccionar elementos.
+
+       </font></p>
+       <p style="color: #FF0044"> <font face="Times new roman" :="" bg="" color="(#99CCFF" text="" align="right">
+           Con esto hemos visto tres de los cinco criterios de selección.
+           </font></p>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
